@@ -1,3 +1,4 @@
+![Thumbnail](./screenshots/ss1.jpg)
 # ArcStatusBar
 <p align="center">
 <img src="./screenshots/ss1.jpg" alt="Screenshot" height="140"/>
