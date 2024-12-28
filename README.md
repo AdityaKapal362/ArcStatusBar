@@ -86,7 +86,7 @@ arcStatusBar.setViewedBarWidth(5);
 - **Language:** Java
 
 ## Contributing
-Contributions are welcome! If youâ€™d like to report an issue, suggest a feature, or submit a pull request, feel free to contribute to the repository.
+Contributions are welcome! If you'd like to report an issue, suggest a feature, or submit a pull request, feel free to contribute to the repository.
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
