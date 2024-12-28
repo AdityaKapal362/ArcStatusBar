@@ -143,9 +143,8 @@ arcStatusBar.setData(data);
 arcStatusBar.setBarGap(2f);
 arcStatusBar.setBarColor(Color.RED);
 arcStatusBar.setViewedBarColor(Color.GRAY);
-arcStatusBar.setBaseColor(Color.TRANSPARENT);
-arcStatusBar.setBarWidth(8);
-arcStatusBar.setViewedBarWidth(5);
+arcStatusBar.setBarWidth(4);
+arcStatusBar.setViewedBarWidth(3);
 ```
 
 ## Requirements
