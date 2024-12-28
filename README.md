@@ -16,3 +16,23 @@
 <img src="./screenshots/ss2.jpg" alt="Screenshot"/>
 <img src="./screenshots/ss3.jpg" alt="Screenshot"/>
 </p>
+
+## Installation
+1. **Add the class to your project:**
+   Copy the `ArcStatusBar` class into your project.
+
+2. **Add to your layout XML:**
+   ```xml
+   <com.yourpackage.ArcStatusBar
+       android:id="@+id/arc_status_bar"
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:background="@android:color/transparent" />
+   ```
+
+3. **Instantiate Programmatically:**
+   ```java
+   ArcStatusBar arcStatusBar = new ArcStatusBar(context);
+   arcStatusBar.setLayoutParams(new LinearLayout.LayoutParams(100, 100));
+   arcStatusBar.setData(yourArcDataList);
+   ```
