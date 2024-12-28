@@ -55,7 +55,7 @@ arcStatusBar.addBar();
 // this will add a viewed bar
 arcStatusBar.addBar(true);
 
-// use this to clear remove bar
+// use this to remove specific bar
 arcStatusBar.removeBar(position);
 
 // use this to remove all bars
