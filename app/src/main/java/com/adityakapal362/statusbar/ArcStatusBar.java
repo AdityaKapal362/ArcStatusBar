@@ -8,6 +8,7 @@ import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.content.Context;
+import android.util.AttributeSet;
 import android.util.TypedValue;
 import java.util.ArrayList;
 
