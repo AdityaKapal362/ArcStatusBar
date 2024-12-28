@@ -53,6 +53,13 @@ arcStatusBar.addBar();
 // this will add a viewed bar
 arcStatusBar.addBar(true);
 
+// this will add an unviewed bar
+arcStatusBar.addBar(false);
+
+// this will add bars to specific number
+// ex: adding 10 bar
+arcStatusBar.addBar(10);
+
 // use this to remove specific bar
 arcStatusBar.removeBar(position);
 

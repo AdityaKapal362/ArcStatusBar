@@ -86,6 +86,12 @@ public class ArcStatusBar extends RelativeLayout {
 		list2 = countRotate();
 		invalidate();
 	}
+
+	public void addBar(int barTotal) {
+		for (int i = 0; i < barTotal; i++) {
+			addBar();
+		}
+	}
 	
 	public void removeBar(int pos) {
 		list.remove(pos);
