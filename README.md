@@ -14,4 +14,5 @@
 ## Preview
 <p align="center">
 <img src="./screenshots/ss2.jpg" alt="Screenshot"/>
+<img src="./screenshots/ss3.jpg" alt="Screenshot"/>
 </p>
