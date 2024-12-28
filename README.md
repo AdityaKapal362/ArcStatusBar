@@ -37,6 +37,56 @@
    arcStatusBar.setData(yourArcDataList);
    ```
 
+## Usage
+### 1. **Add or Set Data**
+Set the `ArcStatusBar` data using an `ArrayList` of `ArcData`:
+```java
+ArrayList<ArcData> data = new ArrayList<>();
+data.add(new ArcData(false)); // Unviewed bar
+data.add(new ArcData(true));  // Viewed bar
+
+arcStatusBar.setData(data);
+
+// if u dont want to make an ArrayList
+// u can use this instead:
+arcStatusBar.addBar();
+// this will add an unviewed bar
+
+// this will add a viewed bar
+arcStatusBar.addBar(true);
+
+// use this to clear remove bar
+arcStatusBar.removeBar(position);
+
+// use this to remove all bars
+arcStatusBar.removeAllBar();
+```
+
+### 2. **View or Unview Bars**
+Mark a specific bar as viewed or unviewed using:
+```java
+arcStatusBar.viewBar(position);   // Mark bar at 'position' as viewed
+arcStatusBar.unviewBar(position); // Mark bar at 'position' as unviewed
+
+// use this to view all bars
+arcStatusBar.setAllBarViewed();
+// use this to unview all bars
+arcStatusBar.setAllBarUnviewed();
+
+// get if bar viewed or not
+boolean isViewed = arcStatusBar.isBarViewed(position);
+```
+
+### 3. **Customize Appearance**
+You can customize the bar's appearance programmatically:
+```java
+arcStatusBar.setBarColor(Color.GREEN);           // Change unviewed bar color
+arcStatusBar.setViewedBarColor(Color.GRAY);      // Change viewed bar color
+arcStatusBar.setBaseColor(Color.TRANSPARENT);    // Transparent center
+arcStatusBar.setBarWidth(5);                     // Set bar width
+arcStatusBar.setViewedBarWidth(3);               // Set viewed bar width
+```
+
 ## XML Attributes (Optional)
 You can extend `ArcStatusBar` to support custom XML attributes. Here's an example of supported attributes you could implement:
 ```xml
@@ -59,8 +109,6 @@ To use them:
     app:barWidth="5dp"
     app:viewedBarWidth="3dp" />
 ```
-
----
 
 ## Example Project
 Here is how you can use `ArcStatusBar` in an activity:
