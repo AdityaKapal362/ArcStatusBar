@@ -74,6 +74,7 @@ data.add(new ArcData(true));
 arcStatusBar.setData(data);
 
 // Customize colors and appearance
+arcStatusBar.setBarGap(2f);
 arcStatusBar.setBarColor(Color.RED);
 arcStatusBar.setViewedBarColor(Color.GRAY);
 arcStatusBar.setBaseColor(Color.TRANSPARENT);
@@ -89,4 +90,4 @@ arcStatusBar.setViewedBarWidth(5);
 Contributions are welcome! If you'd like to report an issue, suggest a feature, or submit a pull request, feel free to contribute to the repository.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [GPL-3.0 License](LICENSE).
