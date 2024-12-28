@@ -82,7 +82,7 @@ public class ArcStatusBar extends RelativeLayout {
 	
 	public void addBar(boolean viewed) {
 		if (list==null) list = new ArrayList<>();
-		list.add(new ArcData(viewed));
+		list.add(0, new ArcData(viewed));
 		list2 = countRotate();
 		invalidate();
 	}
