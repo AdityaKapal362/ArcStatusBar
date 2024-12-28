@@ -80,11 +80,29 @@ boolean isViewed = arcStatusBar.isBarViewed(position);
 ### 3. **Customize Appearance**
 You can customize the bar's appearance programmatically:
 ```java
-arcStatusBar.setBarColor(Color.GREEN);           // Change unviewed bar color
-arcStatusBar.setViewedBarColor(Color.GRAY);      // Change viewed bar color
-arcStatusBar.setBaseColor(Color.TRANSPARENT);    // Transparent center
-arcStatusBar.setBarWidth(5);                     // Set bar width
-arcStatusBar.setViewedBarWidth(3);               // Set viewed bar width
+arcStatusBar.setBarColor(Color.GREEN);
+// Change unviewed bar color
+
+arcStatusBar.setViewedBarColor(Color.GRAY);
+// Change viewed bar color
+
+arcStatusBar.setBarWidth(5);
+// Set bar width
+
+arcStatusBar.setViewedBarWidth(3);
+// Set viewed bar width
+
+arcStatusBar.setBarGap(4f);
+// Set gap each bars
+
+arcStatusBar.getBarWidth()
+// Return bar width in integer
+
+arcStatusBar.getViewedBarWidth()
+// Return viewed bar width in integer
+
+arcStatusBar.getBarGap()
+// Return bar gap in float
 ```
 
 ## XML Attributes (Optional)
