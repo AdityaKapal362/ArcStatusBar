@@ -17,16 +17,10 @@ public class ArcStatusBar extends RelativeLayout {
 	private ArrayList<ArcData> list;
 	private ArrayList<RotateData> list2;
 	
-	private Paint pBar = new Paint();
-	private Paint pViewed = new Paint();
-	private Paint pCircle = new Paint();
+	private Paint pBar, pViewed, pCircle;
 	
-	private int pads, saveLayerId;
-	private float pad = 5f;
-	private float temp, sub;
-	
-	private int barWidth = 2;
-	private int viewedBarWidth = 2;
+	private int pads, saveLayerId, barWidth, viewedBarWidth;
+	private float temp, sub, pad;
 
 	public ArcStatusBar(Context context) {
 		super(context);
@@ -44,6 +38,11 @@ public class ArcStatusBar extends RelativeLayout {
 	}
 	
 	public void init() {
+		pBar = new Paint();
+		pViewed = new Paint();
+		pad = 5f;
+		barWidth = 2;
+		viewedBarWidth = 2;
 		setLayoutParams(new LinearLayout.LayoutParams(getDip(50),getDip(50)));
 		pBar.setStyle(Paint.Style.STROKE);
 		pBar.setStrokeWidth(getDip(barWidth));
