@@ -1,8 +1,5 @@
 ![Thumbnail](./screenshots/ss1.jpg)
 # ArcStatusBar
-<p align="center">
-<img src="./screenshots/ss1.jpg" alt="Screenshot" height="140"/>
-</p>
 <p>A simple and lightweight whatsapp-like-status-bar that fully customizable.</p>
 <p><b>ArcStatusBar</b> is a custom Android View that visually represents a user's status (e.g., stories) using customizable arc-based bars, similar to the status bars in WhatsApp or Instagram. It supports features such as viewing/unviewing bars, dynamic updates, and XML or programmatic integration.</p>
 
