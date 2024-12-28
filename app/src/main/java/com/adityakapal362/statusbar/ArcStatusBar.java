@@ -26,9 +26,23 @@ public class ArcStatusBar extends RelativeLayout {
 	
 	private int barWidth = 2;
 	private int viewedBarWidth = 2;
+
+	public ArcStatusBar(Context context) {
+		super(context);
+		init();
+	}
 	
-	public ArcStatusBar(Context a) {
-		super(a);
+	public ArcStatusBar(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		init();
+	}
+	
+	public ArcStatusBar(Context context, AttributeSet attrs, int defStyleAttr) {
+		super(context, attrs, defStyleAttr);
+		init();
+	}
+	
+	public void init() {
 		setLayoutParams(new LinearLayout.LayoutParams(getDip(50),getDip(50)));
 		pBar.setStyle(Paint.Style.STROKE);
 		pBar.setStrokeWidth(getDip(barWidth));
